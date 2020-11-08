@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilol.css">
+</head>
+<body>
+	<div class="container">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="elegir"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Iniciar sesión</button>
+				<button type="button" class="toggle-btn" onclick="registrar()">Registrar</button>
+			</div>
+			<div class="redes-sociales">
+				<img src="../image/facebook.png" alt="icono_facebook">
+				<img src="../image/gmail.png" alt="icono_gmail">
+				<img src="../image/twitter.png" alt="icono_gmail">
+			</div>
+			<form id="login" class="input-group">
+				<input type="text" class="input-field" placeholder="Nombre de usuario" name="" required>
+				<input type="password" class="input-field" placeholder="Contraseña" name="" required>
+				<input type="checkbox" class="check-box" name=""><span>Recordar Contraseña</span>
+				<button type="submit" class="submit-btn">Acceder</button>
+			</form>
+			<form id="registrar" class="input-group">
+				<input type="text" class="input-field" placeholder="Nombre de usuario" name="" required>
+				<input type="email" class="input-field" placeholder="Correo electrónico" name="" required>
+				<input type="password" class="input-field" placeholder="Contraseña" name="" required>
+				<input type="checkbox" class="check-box" name=""><span>Acepto los términos y condiciones</span>
+				<button type="submit" class="submit-btn">Registrar</button>
+			</form>
+		</div>
+	</div>
+	<script src="../js/mover.js"></script>
+</body>
+</html>

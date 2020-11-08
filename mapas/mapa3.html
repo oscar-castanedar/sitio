@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapa San Miguel de Allende</title>
+    <link rel="shortcut icon" href="../image/icon.png" type="image/x-icon">
+      <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css
+    ">
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo5WyQs6a2dvav_nZonIE-U5N85Cwub9Y&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+        #map {
+        height: 500px;
+        width: 100%;
+      }
+    </style>
+    <script>
+
+      function initMap() {
+        const uluru = { lat: 20.9092006, lng: -100.7536123 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: uluru,
+        });
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h6>Nuestra tienda en San Miguel de Allende</h6>
+    <div id="map"></div>
+        <br>
+    <center>
+      <a class="btn btn-dark" href="../index.html" role="button">Volver</a>
+    </center>
+  </body>
+</html>
